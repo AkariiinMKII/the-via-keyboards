@@ -1,0 +1,430 @@
+{
+  "name": "AkaCube HHKB",
+  "vendorId": "0xA1CA",
+  "productId": "0x3F54",
+  "matrix": {
+    "rows": 5,
+    "cols": 14
+  },
+  "keycodes": ["qmk_lighting"],
+  "menus": [
+    "qmk_rgblight",
+    {
+      "label": "Custom",
+      "content": [
+        {
+          "label": "Preference",
+          "content": [
+            {
+              "label": "Indicator Timeout (x100ms)",
+              "type": "range",
+              "options": [1, 100],
+              "content": ["id_led_timeout", 0, 11]
+            },
+            {
+              "label": "Show Lock Indicators for Layer Key",
+              "type": "toggle",
+              "content": ["id_flag_override_layerled", 0, 12]
+            },
+            {
+              "label": "Auto Disable Lock Indicators on macOS/iOS",
+              "type": "toggle",
+              "content": ["id_flag_auto_disable", 0, 13]
+            },
+            {
+              "label": "Auto Swap Alt/GUI on macOS/iOS",
+              "type": "toggle",
+              "content": ["id_flag_auto_swap", 0, 14]
+            }
+          ]
+        },
+        {
+          "label": "Lock Indicator 1",
+          "content": [
+            {
+              "label": "Indicator",
+              "type": "dropdown",
+              "options": [
+                ["Disabled", 0],
+                ["Num Lock", 1],
+                ["Caps Lock", 2],
+                ["Scroll Lock", 4],
+                ["Compose", 8],
+                ["Kana", 16]
+              ],
+              "content": ["id_lock_led_0_config", 0, 0]
+            },
+            {
+              "label": "ON Color",
+              "type": "dropdown",
+              "options": [
+                ["Red", 1],
+                ["Orange", 2],
+                ["Yellow", 3],
+                ["Lime", 4],
+                ["Green", 5],
+                ["Teal", 6],
+                ["Cyan", 7],
+                ["Azure", 8],
+                ["Blue", 9],
+                ["Purple", 10],
+                ["Magenta", 11],
+                ["Rose", 12],
+                ["White", 13],
+                ["Black", 14]
+              ],
+              "content": ["id_lock_led_0_color_on", 0, 2]
+            },
+            {
+              "label": "OFF Color",
+              "type": "dropdown",
+              "options": [
+                ["Red", 1],
+                ["Orange", 2],
+                ["Yellow", 3],
+                ["Lime", 4],
+                ["Green", 5],
+                ["Teal", 6],
+                ["Cyan", 7],
+                ["Azure", 8],
+                ["Blue", 9],
+                ["Purple", 10],
+                ["Magenta", 11],
+                ["Rose", 12],
+                ["White", 13],
+                ["Black", 14]
+              ],
+              "content": ["id_lock_led_0_color_off", 0, 1]
+            }
+          ]
+        },
+        {
+          "label": "Lock Indicator 2",
+          "content": [
+            {
+              "label": "Indicator",
+              "type": "dropdown",
+              "options": [
+                ["Disabled", 0],
+                ["Num Lock", 1],
+                ["Caps Lock", 2],
+                ["Scroll Lock", 4],
+                ["Compose", 8],
+                ["Kana", 16]
+              ],
+              "content": ["id_lock_led_1_config", 0, 3]
+            },
+            {
+              "label": "ON Color",
+              "type": "dropdown",
+              "options": [
+                ["Red", 1],
+                ["Orange", 2],
+                ["Yellow", 3],
+                ["Lime", 4],
+                ["Green", 5],
+                ["Teal", 6],
+                ["Cyan", 7],
+                ["Azure", 8],
+                ["Blue", 9],
+                ["Purple", 10],
+                ["Magenta", 11],
+                ["Rose", 12],
+                ["White", 13],
+                ["Black", 14]
+              ],
+              "content": ["id_lock_led_1_color_on", 0, 5]
+            },
+            {
+              "label": "OFF Color",
+              "type": "dropdown",
+              "options": [
+                ["Red", 1],
+                ["Orange", 2],
+                ["Yellow", 3],
+                ["Lime", 4],
+                ["Green", 5],
+                ["Teal", 6],
+                ["Cyan", 7],
+                ["Azure", 8],
+                ["Blue", 9],
+                ["Purple", 10],
+                ["Magenta", 11],
+                ["Rose", 12],
+                ["White", 13],
+                ["Black", 14]
+              ],
+              "content": ["id_lock_led_1_color_off", 0, 4]
+            }
+          ]
+        },
+        {
+          "label": "Lock Indicator 3",
+          "content": [
+            {
+              "label": "Indicator",
+              "type": "dropdown",
+              "options": [
+                ["Disabled", 0],
+                ["Num Lock", 1],
+                ["Caps Lock", 2],
+                ["Scroll Lock", 4],
+                ["Compose", 8],
+                ["Kana", 16]
+              ],
+              "content": ["id_lock_led_2_config", 0, 6]
+            },
+            {
+              "label": "ON Color",
+              "type": "dropdown",
+              "options": [
+                ["Red", 1],
+                ["Orange", 2],
+                ["Yellow", 3],
+                ["Lime", 4],
+                ["Green", 5],
+                ["Teal", 6],
+                ["Cyan", 7],
+                ["Azure", 8],
+                ["Blue", 9],
+                ["Purple", 10],
+                ["Magenta", 11],
+                ["Rose", 12],
+                ["White", 13],
+                ["Black", 14]
+              ],
+              "content": ["id_lock_led_2_color_on", 0, 8]
+            },
+            {
+              "label": "OFF Color",
+              "type": "dropdown",
+              "options": [
+                ["Red", 1],
+                ["Orange", 2],
+                ["Yellow", 3],
+                ["Lime", 4],
+                ["Green", 5],
+                ["Teal", 6],
+                ["Cyan", 7],
+                ["Azure", 8],
+                ["Blue", 9],
+                ["Purple", 10],
+                ["Magenta", 11],
+                ["Rose", 12],
+                ["White", 13],
+                ["Black", 14]
+              ],
+              "content": ["id_lock_led_2_color_off", 0, 7]
+            }
+          ]
+        },
+        {
+          "label": "Layer Indicators",
+          "content": [
+            {
+              "label": "ON Color",
+              "type": "dropdown",
+              "options": [
+                ["Red", 1],
+                ["Orange", 2],
+                ["Yellow", 3],
+                ["Lime", 4],
+                ["Green", 5],
+                ["Teal", 6],
+                ["Cyan", 7],
+                ["Azure", 8],
+                ["Blue", 9],
+                ["Purple", 10],
+                ["Magenta", 11],
+                ["Rose", 12],
+                ["White", 13],
+                ["Black", 14]
+              ],
+              "content": ["id_layer_led_color_on", 0, 10]
+            },
+            {
+              "label": "OFF Color",
+              "type": "dropdown",
+              "options": [
+                ["Red", 1],
+                ["Orange", 2],
+                ["Yellow", 3],
+                ["Lime", 4],
+                ["Green", 5],
+                ["Teal", 6],
+                ["Cyan", 7],
+                ["Azure", 8],
+                ["Blue", 9],
+                ["Purple", 10],
+                ["Magenta", 11],
+                ["Rose", 12],
+                ["White", 13],
+                ["Black", 14]
+              ],
+              "content": ["id_layer_led_color_off", 0, 9]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "layouts": {
+    "labels": [
+      "2U Backspace",
+      "2.75U Right Shift",
+      "Split Space Bar"
+    ],
+    "keymap": [
+      {
+        "name": "HHKB"
+      },
+      [
+        {
+          "c": "#777777"
+        },
+        "0,0",
+        {
+          "c": "#cccccc"
+        },
+        "0,1",
+        "0,2",
+        "0,3",
+        "0,4",
+        "0,5",
+        "0,6",
+        "0,7",
+        "0,8",
+        "0,9",
+        "0,10",
+        "0,11",
+        "0,12",
+        "0,13\n\n\n0,0",
+        "1,13\n\n\n0,0",
+        {
+          "c": "#aaaaaa",
+          "w": 2
+        },
+        "0,13\n\n\n0,1"
+      ],
+      [
+        {
+          "c": "#aaaaaa",
+          "w": 1.5
+        },
+        "1,0",
+        {
+          "c": "#cccccc"
+        },
+        "1,1",
+        "1,2",
+        "1,3",
+        "1,4",
+        "1,5",
+        "1,6",
+        "1,7",
+        "1,8",
+        "1,9",
+        "1,10",
+        "1,11",
+        "1,12",
+        {
+          "c": "#aaaaaa",
+          "w": 1.5
+        },
+        "2,13"
+      ],
+      [
+        {
+          "w": 1.75
+        },
+        "2,0",
+        {
+          "c": "#cccccc"
+        },
+        "2,1",
+        "2,2",
+        "2,3",
+        "2,4",
+        "2,5",
+        "2,6",
+        "2,7",
+        "2,8",
+        "2,9",
+        "2,10",
+        "2,11",
+        {
+          "c": "#777777",
+          "w": 2.25
+        },
+        "2,12"
+      ],
+      [
+        {
+          "c": "#aaaaaa",
+          "w": 2.25
+        },
+        "3,0",
+        {
+          "c": "#cccccc"
+        },
+        "3,1",
+        "3,2",
+        "3,3",
+        "3,4",
+        "3,5",
+        "3,6",
+        "3,7",
+        "3,8",
+        "3,9",
+        "3,10",
+        {
+          "c": "#aaaaaa",
+          "w": 1.75
+        },
+        "3,11\n\n\n1,0",
+        "3,12\n\n\n1,0",
+        {
+          "c": "#aaaaaa",
+          "w": 2.75
+        },
+        "3,11\n\n\n1,1"
+      ],
+      [
+        {
+          "x": 1.75
+        },
+        "4,1",
+        {
+          "w": 1.5
+        },
+        "4,2",
+        {
+          "c": "#cccccc",
+          "w": 6.25
+        },
+        "4,7\n\n\n2,0",
+        {
+          "w": 2.25
+        },
+        "4,4\n\n\n2,1",
+        {
+          "w": 1.75
+        },
+        "4,7\n\n\n2,1",
+        {
+          "w": 2.25
+        },
+        "4,8\n\n\n2,1",
+        {
+          "x": -6.25
+        },
+        {
+          "c": "#aaaaaa",
+          "w": 1.5
+        },
+        "4,9",
+        "4,10"
+      ]
+    ]
+  }
+}
