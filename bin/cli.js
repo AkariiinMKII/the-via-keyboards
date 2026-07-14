@@ -1,7 +1,13 @@
 #!/usr/bin/env node
 'use strict';
 
-require('tsx');
-const path = require('path');
+async function main() {
+  const tsx = await import('tsx');
+  const {tsImport} = require('tsx/esm/api');
 
-require(path.resolve(__dirname, '..', 'scripts', 'build-all.ts'));
+  await tsImport(
+    './scripts/build-all',
+    './node_modules/via-keyboards/tsconfig.json',
+  );
+}
+main();
