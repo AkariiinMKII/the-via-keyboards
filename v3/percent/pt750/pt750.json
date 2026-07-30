@@ -2,7 +2,6 @@
   "name": "Platinum PT750",
   "vendorId": "0x8101",
   "productId": "0x2402",
-  "keycodes": ["qmk_lighting"],
   "matrix": {
     "rows": 6,
     "cols": 16
